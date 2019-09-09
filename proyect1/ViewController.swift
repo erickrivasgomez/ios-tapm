@@ -21,12 +21,12 @@ class ViewController: UIViewController {
     
 
     @IBAction func btnPalindromo(_ sender: Any) {
-        var original: String = nombre.text!;
+        let original: String = nombre.text!;
         
         var reverse = ""
         
-        for character in originalcharacters {
-            var char = "\(character)"
+        for character in original {
+            let char = "\(character)"
             reverse = char + reverse
         }
         

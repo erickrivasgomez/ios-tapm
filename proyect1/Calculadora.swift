@@ -35,4 +35,26 @@ class Calculadora: UIViewController {
         
     }
     
+    @IBAction func restar(_ sender: Any) {
+        let numA: Int? = Int(numeroa.text!);
+        let numB: Int? = Int(numerob.text!);
+        let convert = numA! - numB!;
+        let convertText = String(convert)
+        resta.text = convertText
+    }
+    
+    @IBAction func producto(_ sender: Any) {
+        let numA: Int? = Int(numeroa.text!);
+        let numB: Int? = Int(numerob.text!);
+        let convert = numA! * numB!;
+        let convertText = String(convert)
+        producto.text = convertText
+    }
+    @IBAction func cociente(_ sender: Any) {
+        let numA: Int? = Int(numeroa.text!);
+        let numB: Int? = Int(numerob.text!);
+        let convert = numA! / numB!;
+        let convertText = String(convert)
+        cociente.text = convertText
+    }
 }

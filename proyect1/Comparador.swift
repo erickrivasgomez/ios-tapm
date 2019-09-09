@@ -11,5 +11,8 @@ import UIKit
 
 class Comparador: UIViewController {
     
-
+    @IBOutlet weak var primero: UITextField!
+    @IBOutlet weak var segundo: UITextField!
+    @IBOutlet weak var tercero: UITextField!
+    
 }

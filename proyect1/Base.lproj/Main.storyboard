@@ -276,18 +276,32 @@
                                 <rect key="frame" x="72" y="178" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="ASC"/>
+                                <connections>
+                                    <action selector="ascendente:" destination="sFk-PK-64F" eventType="touchUpInside" id="yOt-gQ-kRF"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IAf-Oj-rOJ">
                                 <rect key="frame" x="213" y="178" width="40" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="DESC"/>
+                                <connections>
+                                    <action selector="descendente:" destination="sFk-PK-64F" eventType="touchUpInside" id="Acr-Lw-tPZ"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DDe-rQ-EVT">
+                                <rect key="frame" x="89" y="271" width="143" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="W5x-Yo-ZYR"/>
                     </view>
                     <connections>
                         <outlet property="primero" destination="vdf-Oq-1Xl" id="gzP-Za-BBR"/>
+                        <outlet property="resultado" destination="DDe-rQ-EVT" id="Tcb-R5-mcZ"/>
                         <outlet property="segundo" destination="Fpe-Pt-TWT" id="egP-38-7ZO"/>
                         <outlet property="tercero" destination="Iin-lB-3f4" id="RGf-yX-HH6"/>
                     </connections>
